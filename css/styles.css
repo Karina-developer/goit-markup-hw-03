@@ -1,12 +1,23 @@
 :root {
   --accent-color: #2196f3;
+  --main-color: #212121;
+  --text-decoration-color: #757575;
 }
 
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   background-color: #ffffff;
-  color: #757575;
+  color: var(--text-decoration-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Roboto;
 }
 
 a {
@@ -25,16 +36,14 @@ ul {
 
 .logotipe-link {
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .logotipe-link > .logotipe-part {
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
@@ -49,7 +58,7 @@ ul {
   font-size: 14px;
   line-height: 1.172;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .navigation-link:hover,
@@ -62,7 +71,7 @@ ul {
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--text-decoration-color);
 }
 .mailto-link:hover,
 .mailto-link:focus {
@@ -74,7 +83,7 @@ ul {
   font-size: 14px;
   line-height: 1.172;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--text-decoration-color);
 }
 .tel-link:hover,
 .tel-link:focus {
@@ -86,7 +95,7 @@ ul {
 /* ============HERO=============== */
 
 .section-title {
-  color: #212121;
+  color: var(--main-color);
 }
 
 .hero {
@@ -111,12 +120,18 @@ ul {
 /* Кнопка */
 
 .modal-btn {
+  font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
+  background-color: #ffffff;
   cursor: pointer;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
 }
 
 /* ============ END HERO=============== */
@@ -130,7 +145,7 @@ ul {
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .description {
@@ -139,7 +154,7 @@ ul {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-decoration-color);
 }
 
 /* =============END FEATURES============ */
@@ -152,7 +167,7 @@ ul {
   line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 
 /* =============END ABOUT================== */
@@ -166,7 +181,7 @@ ul {
   line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .team-description {
@@ -176,7 +191,11 @@ ul {
   line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-decoration-color);
+}
+
+.team-list {
+  cursor: pointer;
 }
 
 /* ===============END TEAM==================== */
@@ -204,7 +223,7 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .portfolio-description {
@@ -213,19 +232,93 @@ footer {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-decoration-color);
 }
 
 /* ===============END PORTFOLIO==================== */
 
 /* ===============BUTTON==================== */
 .portfolio-btn {
-  color: #212121;
+  font-family: inherit;
+  color: var(--main-color);
+  cursor: pointer;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 
 /* ===============END BUTTON=================== */
+
+/* ===============OUTLINE=================== */
+.pointer {
+  outline: 2px solid tomato;
+}
+.logotipe-link {
+  outline: 2px solid tomato;
+}
+.navigation-link {
+  outline: 2px solid tomato;
+}
+.mailto-link {
+  outline: 2px solid tomato;
+}
+.tel-link {
+  outline: 2px solid tomato;
+}
+.cursor {
+  outline: 2px solid tomato;
+}
+.hero {
+  outline: 2px solid tomato;
+}
+.features {
+  outline: 2px solid tomato;
+}
+.features-title {
+  outline: 2px solid tomato;
+}
+.description {
+  outline: 2px solid tomato;
+}
+.about {
+  outline: 2px solid tomato;
+}
+.about-img {
+  outline: 2px solid tomato;
+}
+.team {
+  outline: 2px solid tomato;
+}
+.title {
+  outline: 2px solid tomato;
+}
+.team-img {
+  outline: 2px solid tomato;
+}
+.team-title {
+  outline: 2px solid tomato;
+}
+.team-description {
+  outline: 2px solid tomato;
+}
+.footer-map {
+  outline: 2px solid tomato;
+}
+.portfolio {
+  outline: 2px solid tomato;
+}
+.portfolio-btn {
+  outline: 2px solid tomato;
+}
+.portfolio-list-img {
+  outline: 2px solid tomato;
+}
+.portfolio-title {
+  outline: 2px solid tomato;
+}
+.portfolio-description {
+  outline: 2px solid tomato;
+}
+/* ===============OUTLINE=================== */
