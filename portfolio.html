@@ -6,16 +6,20 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <!--HEADER-->
+  <!------------HEADER--------------->
   <body class="page">
     <header class="header">
-      <div class="pointer">
+      <div class="container">
         <nav class="navigation">
           <a class="logotipe-link" href="./index.html"
             >Web<span class="logotipe-part">Studio</span></a
@@ -40,12 +44,12 @@
         <a class="tel-link" href="tel:+380961111111">+38 096 111 11 11</a>
       </div>
     </header>
-
     <!---------------PORTFOLIO----------------->
     <main>
       <section class="portfolio">
-        <h1 class="visually-hidden">Портфолио</h1>
         <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+
           <ul class="portfolio-list">
             <li class="portfolio-item"></li>
             <button class="portfolio-btn" type="button">Все</button>
@@ -202,33 +206,38 @@
         </div>
       </section>
     </main>
-    <!--FOOTER-->
     <footer class="footer">
-      <address>
-        <ul class="footer-list">
-          <li class="footer-item">
-            <a class="logotipe-link" href="./index.html"
-              >Web<span class="logotipe-part">Studio</span></a
-            >
-          </li>
-          <li class="footer-item">
-            <a
-              class="footer-map"
-              href="https://g.page/stamp-capital?share"
-              target="_blank"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li class="footer-item">
-            <a class="mailto-link" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li class="footer-item">
-            <a class="tel-link" href="tel:+380991111111">+38 099 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <section class="footer">
+          <address>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a class="logotipe-link" href="./index.html"
+                  >Web<span class="logotipe-part">Studio</span></a
+                >
+              </li>
+              <li class="footer-item">
+                <a
+                  class="footer-map"
+                  href="https://g.page/stamp-capital?share"
+                  target="_blank"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-item">
+                <a class="mailto-link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-item">
+                <a class="tel-link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
