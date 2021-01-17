@@ -17,7 +17,18 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0;
   font-family: Roboto;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -26,6 +37,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+img {
+  display: block;
 }
 
 /* цвет основного текста #212121 */
@@ -37,6 +52,7 @@ ul {
 .logotipe-link {
   font-family: Raleway;
   font-weight: bold;
+  margin-right: 93px;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
@@ -49,7 +65,22 @@ ul {
 
 /* ===========HEADER=============== */
 
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list-item {
+  margin-right: 50px;
+}
+
+.navigation-list-item:last-child {
+  margin-right: 0;
+}
+
 .navigation-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.172;
@@ -62,8 +93,27 @@ ul {
   color: var(--accent-color);
 }
 
+.auth-navigation-list {
+  display: flex;
+}
+
+.auth-list-item {
+  margin-right: 50px;
+}
+
+.auth-list-item:last-child {
+  margin-right: 0;
+}
+
+.navigation-list-item:last-child {
+  margin-right: 0;
+}
+
 .mailto-link {
+  display: block;
   font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-size: 14px;
   font-style: normal;
   line-height: 1.142;
@@ -76,6 +126,10 @@ ul {
 }
 
 .tel-link {
+  display: block;
+  font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   font-style: normal;
@@ -86,6 +140,12 @@ ul {
 .tel-link:hover,
 .tel-link:focus {
   color: var(--accent-color);
+}
+
+.auth-navigation-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 /* ===========END HEADER=============== */
@@ -99,6 +159,9 @@ ul {
 .hero {
   width: 100%;
   height: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
   background-color: #2f303a;
   background-size: contain;
   background-repeat: no-repeat;
@@ -107,6 +170,8 @@ ul {
 .hero-title {
   font-style: normal;
   font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 44px;
   line-height: 1.363;
   text-align: center;
@@ -120,6 +185,8 @@ ul {
 .modal-btn {
   font-family: inherit;
   font-weight: bold;
+  padding: 10px 32px;
+  min-width: 200px;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
@@ -136,9 +203,25 @@ ul {
 
 /* =============FEATURES============ */
 
+.features-list {
+  display: flex;
+}
+
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .features-title {
   font-style: normal;
   font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.03em;
@@ -149,6 +232,8 @@ ul {
 .description {
   font-style: normal;
   font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -158,24 +243,46 @@ ul {
 /* =============END FEATURES============ */
 
 /* =============ABOUT================== */
+
+.about-list {
+  display: flex;
+}
 .title {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 50px;
   line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
 
+.about-img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* =============END ABOUT================== */
 
 /* ===============TEAM==================== */
+
+.team-list {
+  display: flex;
+}
+
+.team-section {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
 
 .team-title {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 10px;
   line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
@@ -186,6 +293,8 @@ ul {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
@@ -194,6 +303,11 @@ ul {
 
 .team-list {
   cursor: pointer;
+}
+
+.team-img {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 /* ===============END TEAM==================== */
@@ -215,10 +329,21 @@ ul {
 
 /* ===============PORTFOLIO==================== */
 
+.header .container {
+  display: flex;
+}
+
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .portfolio-title {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 4px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
@@ -233,12 +358,22 @@ ul {
   color: var(--text-decoration-color);
 }
 
+.portfolio-list-img {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 /* ===============END PORTFOLIO==================== */
 
 /* ===============BUTTON==================== */
 .portfolio-btn {
   font-family: inherit;
+  min-width: 73px;
+  display: inline-block;
   border-radius: 4px;
+  padding: 6px 22px;
+  text-align: center;
+  background-color: #f5f4fa;
   color: var(--main-color);
   cursor: pointer;
 }
@@ -252,9 +387,19 @@ ul {
 
 /* ===============OUTLINE=================== */
 .container {
+  outline: 2px solid tomato;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
+  margin: 0 auto;
+  justify-content: space-between;
   outline: 2px solid tomato;
 }
 .logotipe-link {
