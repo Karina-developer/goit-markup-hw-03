@@ -50,6 +50,8 @@ img {
 /* бэкграунд 2 #F5F4FA */
 
 .logotipe-link {
+  width: 145px;
+  height: 31px;
   font-family: Raleway;
   font-weight: bold;
   margin-right: 93px;
@@ -110,6 +112,8 @@ img {
 }
 
 .mailto-link {
+  min-width: 135px;
+  height: 16px;
   display: block;
   font-weight: 500;
   padding-top: 32px;
@@ -126,6 +130,8 @@ img {
 }
 
 .tel-link {
+  width: 122px;
+  height: 16px;
   display: block;
   font-weight: 500;
   padding-top: 32px;
@@ -152,13 +158,20 @@ img {
 
 /* ============HERO=============== */
 
+.hero-container {
+  padding-left: 452px;
+  padding-right: 452px;
+  f
+}
+
 .section-title {
+  text-align: center;
   color: var(--main-color);
 }
 
 .hero {
-  width: 100%;
-  height: 600;
+  width: 1600px;
+  height: 600px;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
@@ -168,13 +181,13 @@ img {
 }
 
 .hero-title {
+  width: 696px;
   font-style: normal;
   font-weight: 900;
-  margin-top: 0;
+  padding-top: 200px;
   margin-bottom: 30px;
   font-size: 44px;
   line-height: 1.363;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -209,7 +222,7 @@ img {
 
 .features-section {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 47px;
 }
 
 .features-list {
@@ -218,6 +231,8 @@ img {
 }
 
 .features-title {
+  min-width: 270px;
+  height: 16px;
   font-style: normal;
   font-weight: bold;
   margin-top: 0;
@@ -230,6 +245,8 @@ img {
 }
 
 .description {
+  width: 270px;
+  height: 75px;
   font-style: normal;
   font-weight: normal;
   margin-top: 0;
@@ -240,6 +257,10 @@ img {
   color: var(--text-decoration-color);
 }
 
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* =============END FEATURES============ */
 
 /* =============ABOUT================== */
@@ -248,9 +269,12 @@ img {
   display: flex;
 }
 .title {
+  min-width: 376px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
   margin-bottom: 50px;
   line-height: 1.166;
@@ -259,9 +283,18 @@ img {
   color: var(--main-color);
 }
 
+.about-section {
+  padding-top: 47px;
+  padding-bottom: 47px;
+}
+
 .about-img {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* =============END ABOUT================== */
@@ -271,13 +304,18 @@ img {
 .team-list {
   display: flex;
 }
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .team-section {
-  padding-top: 94px;
-  padding-bottom: 0;
+  padding-top: 47px;
+  padding-bottom: 94px;
 }
 
 .team-title {
+  min-width: 151px;
+  height: 19px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -290,6 +328,8 @@ img {
 }
 
 .team-description {
+  min-width: 147px;
+  height: 19px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -319,6 +359,8 @@ img {
 }
 
 .footer-map {
+  width: 231px;
+  height: 21px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -361,6 +403,18 @@ img {
 .portfolio-list-img {
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+.portfolio-list {
+  display: flex;
+}
+
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-card-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* ===============END PORTFOLIO==================== */
