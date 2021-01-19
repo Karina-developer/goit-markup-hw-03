@@ -260,7 +260,7 @@ img {
 
 .features-item {
   margin-bottom: 30px;
-  flex-basis: calc(100% / 4 - 30px);
+  width: calc(100% / 4 - 30px);
 }
 
 /* =============END FEATURES============ */
@@ -297,7 +297,7 @@ img {
 
 .about-item {
   margin-bottom: 30px;
-  flex-basis: calc(100% / 3 - 30px);
+  width: calc(100% / 3 - 30px);
 }
 
 .about-item:not(:last-child) {
@@ -320,13 +320,12 @@ img {
 .team-item {
   padding-bottom: 30px;
   cursor: pointer;
-  flex-basis: calc(100% / 4 - 30px);
+  width: calc(100% / 4 - 30px);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
 }
 
 .team-section {
-  background-color: #f5f4fa;
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -504,7 +503,7 @@ img {
 .card-portfolio-item {
   margin-right: 30px;
   margin-bottom: 30px;
-  flex-basis: calc (100%-30px) / 3;
+  width: calc(100% / 3 - 30px);
 }
 
 .card-portfolio-item:nth-child(3n) {
