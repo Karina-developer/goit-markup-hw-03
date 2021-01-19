@@ -212,6 +212,7 @@ img {
 
 .features-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .features-section {
@@ -221,7 +222,7 @@ img {
 
 .features-list {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 94px;
 }
 
 .features-title {
@@ -255,12 +256,18 @@ img {
   margin-right: 30px;
 }
 
+.features-item {
+  margin-bottom: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+}
+
 /* =============END FEATURES============ */
 
 /* =============ABOUT================== */
 
 .about-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .title {
   min-width: 376px;
@@ -269,7 +276,7 @@ img {
   font-size: 36px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
+  margin-top: auto;
   margin-bottom: 50px;
   line-height: 1.166;
   text-align: center;
@@ -278,13 +285,17 @@ img {
 }
 
 .about-section {
-  padding-top: 47px;
-  padding-bottom: 47px;
+  padding-top: 94px;
 }
 
 .about-img {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.about-item {
+  margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .about-item:not(:last-child) {
@@ -297,13 +308,20 @@ img {
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
 }
+
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
 
+.team-item {
+  margin-bottom: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+}
+
 .team-section {
-  padding-top: 47px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -376,7 +394,6 @@ img {
 
 .address {
   margin-top: 20px;
-  margin-bottom: 60px;
 }
 
 .footer-map {
