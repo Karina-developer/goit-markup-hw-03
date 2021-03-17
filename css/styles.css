@@ -2,12 +2,13 @@
   --accent-color: #2196f3;
   --main-color: #212121;
   --text-decoration-color: #757575;
+  --background-color: #ffffff;
 }
 
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  background-color: #ffffff;
+  background-color: var(--background-color);
   color: var(--text-decoration-color);
 }
 
@@ -46,19 +47,17 @@ img {
 /* цвет основного текста #212121 */
 /* вторичный цвет текста #757575 */
 /* наведение курсором #2196F3 */
-/* бэкграунд 1 #2F303A */
-/* бэкграунд 2 #F5F4FA */
+/*бэкграунд #ffffff */
 
 .logotipe-link {
   width: 145px;
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   margin-right: 93px;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  text-decoration: none;
 }
 .logotipe-link > .logotipe-part {
   color: #000000;
@@ -67,7 +66,7 @@ img {
 /* ===========HEADER=============== */
 
 .header {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   border-bottom: 1px solid #ececec;
 }
 
@@ -140,7 +139,6 @@ img {
   padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
-  font-style: normal;
   line-height: 1.172;
   letter-spacing: 0.02em;
   color: var(--text-decoration-color);
@@ -166,7 +164,8 @@ img {
 }
 
 .hero {
-  width: 100%;
+  max-width: 1600px;
+  height: 600px;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
@@ -177,7 +176,6 @@ img {
 
 .hero-title {
   width: 696px;
-  font-style: normal;
   font-weight: 900;
   margin-top: auto;
   margin-bottom: 30px;
@@ -187,26 +185,28 @@ img {
   line-height: 1.363;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 /* Кнопка */
 
 .modal-btn {
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   padding: 10px 32px;
   min-width: 200px;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px; 
   cursor: pointer;
 }
 .modal-btn:hover,
 .modal-btn:focus {
-  color: #ffffff;
-  background-color: var(--accent-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* ============ END HERO=============== */
@@ -229,8 +229,7 @@ img {
 
 .features-title {
   min-width: 270px;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 14px;
@@ -242,8 +241,6 @@ img {
 
 .description {
   width: 270px;
-  font-style: normal;
-  font-weight: normal;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
@@ -270,8 +267,7 @@ img {
 }
 .title {
   min-width: 376px;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   margin-left: auto;
   margin-right: auto;
@@ -319,7 +315,7 @@ img {
   cursor: pointer;
   flex-basis: calc(100% / 4 - 30px);
   border-radius: 0px 0px 4px 4px;
-  background: #ffffff;
+  background: var(--background-color);
 }
 
 .team-section {
@@ -331,7 +327,6 @@ img {
 .team-title {
   min-width: 151px;
   height: 19px;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   margin-top: 30px;
@@ -345,8 +340,6 @@ img {
 .team-description {
   min-width: 147px;
   height: 19px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   margin-top: 0;
   line-height: 1.187;
@@ -386,12 +379,11 @@ img {
   display: block;
   width: 231px;
   font-style: normal;
-  font-weight: normal;
   margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 .footer-logotipe-link {
@@ -399,7 +391,7 @@ img {
   width: 145px;
   height: 31px;
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
@@ -407,7 +399,7 @@ img {
   text-decoration: none;
 }
 .footer-logotipe-link > .logotipe-part {
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 .footer-mailto-link {
@@ -428,7 +420,6 @@ img {
 .footer-tel-link {
   display: block;
   width: 231px;
-  font-weight: 500;
   font-weight: 500;
   font-size: 14px;
   font-style: normal;
@@ -457,12 +448,11 @@ img {
 .portfolio-section {
   padding-top: 94px;
   padding-bottom: 94px;
-  background: #ffffff;
+  background: var(--background-color);
 }
 
 .portfolio-title {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 4px;
@@ -500,7 +490,7 @@ img {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  background: #ffffff;
+  background: var(--background-color);
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -522,7 +512,7 @@ img {
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  color: #ffffff;
+  color: var(--background-color);
   background-color: var(--accent-color);
 }
 
